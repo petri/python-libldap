@@ -1,3 +1,7 @@
+[![PyPI version](https://badge.fury.io/py/python-libldap.svg)](https://badge.fury.io/py/python-libldap)
+[![Build Status](https://travis-ci.org/yykamei/python-libldap.svg?branch=master)](https://travis-ci.org/yykamei/python-libldap)
+[![Coverage Status](https://coveralls.io/repos/github/yykamei/python-libldap/badge.svg?branch=HEAD)](https://coveralls.io/github/yykamei/python-libldap?branch=HEAD)
+
 python-libldap
 ==============
 
@@ -89,6 +93,24 @@ Delete operation
 
 Changes
 =======
+
+0.8.16 release
+--------------
+
+* Fix: Fix memleak
+    - HAMANO Tsukasa <hamano@osstech.co.jp>
+* Fix: fix for binary attribute
+    - HAMANO Tsukasa <hamano@osstech.co.jp>
+
+0.8.15 release
+--------------
+
+* Add: Travis CI testing
+
+0.8.14 release
+--------------
+
+* Fix: LDAP.rename() description
 
 0.8.13 release
 --------------

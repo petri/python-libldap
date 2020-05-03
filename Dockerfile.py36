@@ -1,0 +1,9 @@
+FROM python:3.6-alpine
+MAINTAINER Yutaka Kamei<kamei@ykamei.net>
+RUN apk add --no-cache build-base openldap-dev git
+WORKDIR /srv
+COPY ./ /srv
+RUN python setup.py install && \
+    pip install coveralls
+CMD coverage run setup.py test; \
+    if [ "${COVERALLS_REPO_TOKEN:-x}" != "x" ]; then coveralls; fi
